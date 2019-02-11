@@ -11,7 +11,19 @@
 	$result->execute(array(':email'=>$email));
    //if email exist throw new Exception
 	
-   if($result->rowCount() > 0){throw new Exception("That email address is taken-----.") ;}
+   if($result->rowCount() > 0){
+   	  
+   	throw new Exception("That email address is taken---.") ;}
+   
+  //  	 $sql1 = "UPDATE tbl_users SET first_name=:firstname,last_name=:lastname,country=:country WHERE email=:email";
+	 // $dbh->exec($sql1);
+   
+
+  
+   
+
+
+
 
 
    //if ok：insert data to database
@@ -30,6 +42,12 @@
 
   }
 
+
+
+// function update_signin(){
+
+
+// }
 
 
 ?>

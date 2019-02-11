@@ -1,0 +1,29 @@
+{
+  "name": "midterm-hackthon",
+  "version": "1.0.0",
+  "description": "midterm level4 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azusakaworu/midterm-hackthon.git"
+  },
+  "keywords": [
+    "midterm",
+    "components",
+    "vue"
+  ],
+  "author": "ling ding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azusakaworu/midterm-hackthon/issues"
+  },
+  "homepage": "https://github.com/azusakaworu/midterm-hackthon#readme",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  }
+}

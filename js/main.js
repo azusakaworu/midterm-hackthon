@@ -13,7 +13,7 @@
          created:function(){this.fetchVideoData();},
          methods:{
             fetchVideoData() {
-                url = './admin/scripts/index.php';
+                url = './admin/index.php';
 
                 fetch(url) 
                 .then(res => res.json())
