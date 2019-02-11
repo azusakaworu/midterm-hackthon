@@ -34,26 +34,40 @@
         <form action="admin/signned_up_page.php"  method="post">
     <fieldset style="width: 250px;"><br>        
        <label>First Name:</label>
-         <input type="text" name="firstname"  required><br><br>
+         <input v-model="input.firstname" type="text" name="firstname"  required><br><br>
 
          <label>Last Name:</label>
-         <input type="text" name="lastname" required ><br><br>  
+         <input v-model="input.lastname" type="text" name="lastname" required ><br><br>  
 
          <label>Email:</label>
-         <input type="email" name="email" required ><br><br>  
+         <input v-model="input.email" type="email" name="email" required ><br><br>  
 
          <label>Country:</label>
-         <input type="text" name="country" required ><br><br>  
+         <input v-model="input.country" type="text" name="country" required ><br><br>  
     </fieldset>
         <br>
-        <input type="submit" value="Sign In!">
+        <button type="submit" >Go!</button>
         
     </form>
    </div>`,
 
-         data() {return {input: {username: "",password: ""}}},
+         data() {return {input: {firstname: "", lastname: "", email:"",country:""}}},
          methods:{
-            login(){}}
+            // signin(){
+            //     console.log("trying to sign in");
+            //     let formData = new FormData();
+            //     formData.append("firstname", this.input.firstname);
+            //     formData.append("lastname", this.input.lastname);
+            //     formData.append("email", this.input.email);
+            //     formData.append("country", this.input.country);
+
+            //      let url = `./admin/signned_up_page.php`;
+            //      fetch(url, {method: 'POST',body: formData})
+            //      .then(res => res.json())
+            //      .then(data =>{})
+            //      .catch(function(error){console.error(error);}
+            // }
+        }
 
 
       };
