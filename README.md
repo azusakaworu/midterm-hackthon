@@ -53,17 +53,20 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-Vue 2.0
++ Vue@2.0
 + gulp-concat@2.6.1
 + gulp-sass@4.0.2
 + gulp@4.0.0
-mySQL 5.7.21
++ mySQL@5.7.21
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - 
+* **Abaddi** - *PM* - 
+* **Yuchen Xia** - *Designer* - 
+* **Lia Vernaet** - *Video/motion* - 
+* **Ling Ding** - *Front End* - 
+* **Ling Ding** - *Back End* - 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
