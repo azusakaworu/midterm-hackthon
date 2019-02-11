@@ -47,9 +47,7 @@ Rely on Vue router and Local Registration bulit a single page app which can chan
 * [gulp sass ](https://www.npmjs.com/package/gulp-sass) - Dependency Management
 
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
@@ -74,6 +72,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Vue official documents https://cn.vuejs.org/v2/guide/
+* php.net documents
+* Readme template https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
