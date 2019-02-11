@@ -4,35 +4,64 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>midterm</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.2/vue-router.min.js"></script>
 </head>
+
+
 <body>
 <main>
-<div id="app">
+<div id="app" class="container-fluid">
 <!-- router-view 是一个全局组件 可以直接使用 -->
 
+<div class="row">
+	
+<div class="col-sm-12">
+    <img src="images/logosvg.svg" width="150px">
+ </div>
+	
+	 
+</div>
 
-<h1>midter header</h1>
-{{msg}}
 
 
-<router-link to='/home'  tag='button'>Home</router-link>
-<router-link to='/signup' tag='button'>Sign Up</router-link>
-<router-link to='/video' tag='button'>Video</router-link>
-<router-link to='/price' tag='button'>Price-List</router-link>
+<div id="routerNav">
+<router-link to='/home'  tag='button' class="btn btn-light">Home</router-link>
+<router-link to='/signup' tag='button' class="btn btn-light">Sign Up</router-link>
+<router-link to='/video' tag='button' class="btn btn-light">Video</router-link>
+<router-link to='/blog' tag='button' class="btn btn-light">Blog</router-link>
+	
+</div>
+
 
 <transition name="fade" mode="out-in">
 	<router-view></router-view>
 </transition>
 	
 
-	<h1>midter footer</h1>	
+	
+	<div id="footerArea">
+		
+		<ul id="socialIcon" class="float-right">
+			Follow us on social media.
+			<li><img src="images/twitter-circular-button.svg"></li>
+			<li><img src="images/facebook-circular-logo.svg"></li>
+		    <li><img src="images/google-plus-circular-button.svg"></li>
+			<li><img src="images/twitter-circular-button.svg"></li>
+		
+		</ul>
+		<p class="copy">
+        &copy; 2019 The Ontario Tourism Company, Inc
+        </p>
+	</div>	
 	
 </div>
 	
 
 </main>
+
+
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

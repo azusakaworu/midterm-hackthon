@@ -1,5 +1,6 @@
 /*css*/
-
+*{margin: 0; padding: 0;}
+ 
 .active{color: red;}
 .fade-enter-active, .fade-leave-active {
     transition-duration: 0.6s;
@@ -12,4 +13,29 @@
 }
 
 
+/*header-----------------*/
+#routerNav{margin-bottom: 50px;}
+
+
+/*footer-----------------*/
+#footerArea{margin-top: 100px;}
+#footerArea{color:white;height: 100px;background-color:#202945; }
+#socialIcon li img {width: 50px;}
+#socialIcon li{display: inline;}
+
+/*home-----------------*/
+#homep{position: absolute;}
+
+#mapText{line-height: 40px; font-size: 20px;}
+
+/*video-----------------*/
 #videotitle{color: pink;}
+
+
+/*blog-----------------*/
+.card{margin-bottom: 30px;}
+
+
+
+
+
