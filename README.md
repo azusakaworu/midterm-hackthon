@@ -1,9 +1,7 @@
 # midterm-hackthon
 Ontario Tourism Project
 
-
-
-put logo branding here
+![GitHub Logo](https://raw.githubusercontent.com/azusakaworu/midterm-hackthon/master/images/logo.jpg)
 
 
 ## Getting Started
@@ -59,7 +57,7 @@ Rely on Vue router and Local Registration bulit a single page app which can chan
 
 ## Authors
 
-* **Abaddi** - *PM* - 
+* **Abdullah abdulazeez** - *PM* - 
 * **Yuchen Xia** - *Designer* - 
 * **Lia Vernaet** - *Video/motion* - 
 * **Ling Ding** - *Front End* - 
