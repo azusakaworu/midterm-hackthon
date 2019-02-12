@@ -1,9 +1,7 @@
 # midterm-hackthon
 Ontario Tourism Project
 
-
-![logo]
-(https://https://raw.githubusercontent.com/azusakaworu/midterm-hackthon/master/images/logo.jpg).
+![GitHub Logo](/images/logo.png)
 
 
 ## Getting Started
