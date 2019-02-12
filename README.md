@@ -57,7 +57,7 @@ Rely on Vue router and Local Registration bulit a single page app which can chan
 
 ## Authors
 
-* **Abaddi** - *PM* - 
+* **Abdullah abdulazeez** - *PM* - 
 * **Yuchen Xia** - *Designer* - 
 * **Lia Vernaet** - *Video/motion* - 
 * **Ling Ding** - *Front End* - 
