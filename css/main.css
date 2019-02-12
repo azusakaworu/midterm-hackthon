@@ -14,7 +14,7 @@
 
 
 /*header-----------------*/
-#routerNav{margin-bottom: 50px;}
+#routerNav{}
 
 
 /*footer-----------------*/
@@ -22,20 +22,27 @@
 #footerArea{color:white;height: 100px;background-color:#202945; }
 #socialIcon li img {width: 50px;}
 #socialIcon li{display: inline;}
+#socialIcon li img:hover{opacity: 0.4;}
+
+#footerInfo{padding-top: 20px;}
+.copy{padding-top: 10px;}
 
 /*home-----------------*/
-#homep{position: absolute;}
+
+#homeImg{position: relative; margin-bottom: 100px;}
+#homeP{position:absolute;top: 300px;left:150px;}
 
 #mapText{line-height: 40px; font-size: 20px;}
-
+.display-4 ,.lead{color: white;}
+/*#mapTextB{margin-top: 100px;}*/
 /*video-----------------*/
-#videotitle{color: pink;}
+#videotitle{color: #7d7d7d ;text-align: center;}
 
 
 /*blog-----------------*/
 .card{margin-bottom: 30px;}
-
-
-
+.sTitle{text-align:center;font-size:18px;color: #7d7d7d;}
+.bTitle{text-align: center;}
+#signupArea{margin-top: 100px;}
 
 

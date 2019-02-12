@@ -2,7 +2,7 @@
     // component will go here
     let videocomponent = {//组件名不能为大写
         template: `<div>
-        <h2 id="videotitle">this is video page</h2>
+        <h2 id="videotitle">Promotion Video</h2>
         <video width="100%"  controls >
            <source :src="'video/'+ midterm_video">
          </video>
@@ -29,13 +29,14 @@
 
 
 
-    let signupcomponent = {template:`<div>
+    let signupcomponent = {template:`<div id="signupArea">
         
     <div class="container">
     <div class="row">
     <div class="col">
+   
         <img src="images/signup.jpg" style="width:400px"></div>
-<div class="col">
+<div class="col"> 
         <form action="admin/signned_up_page.php"  method="post">
         <h2>Let’s Get Started!</h2>
     <fieldset style="width: 250px;"><br>        
@@ -82,16 +83,25 @@
 
     let homecomponent = {template:`<div>
         
+        <div id="homeImg">
+        <img src="images/banner.jpg" style="width: 1300px" >
+        </div>
 
-        <img src="images/banner.jpg" style="width: 1300px">
-        <p id="homeP" class="lead">Find Yourself At Home</p>
+       <div id="homeP"> 
        
+      <h2  class="display-4">Find Yourself At Home</h2>
+      <hr class="my-4">
+        <p class="lead">Explore with joy your deserve</p>
+        <a class="btn btn-outline-light" href="index.html#/destinations" role="button">Make a Tour</a>
+       
+        </div>
 
-<div class="container">
+<div class="container" >
   <div class="row">
  <div class="col">
 <img src="images/map.jpg" style="width: 600px"></div>
- <div class="col">
+ <div class="col" id="mapTextB">
+
         <h3>Ontario</h3>
         <p id="mapText">Ontario  is one of the 13 provinces and territories of 
 Canada and is located in east-central Canada 
@@ -106,11 +116,10 @@ Ontario's provincial capital.</p></div>
 
 </div></div>
 
- <div class="container">
-  <div class="row justify-content-md-center">
-      <div class="col-md-auto">
-       <h2> Interesting Blog </h2><br><br>
-    </div></div></div>
+ 
+      <h3 class="sTitle">Find out most</h3>
+       <h2 class="bTitle"> Interesting Blog </h2><br><br>
+    
 
     <div class="container">
   <div class="row">
@@ -120,11 +129,12 @@ first cruise, your thoughts about
 cruise ships and cruise vacations 
 consisted of flashbacks to 
 love Ontario. Cruising</p>
-<button type="button" class="btn btn-secondary">See More</button>
+
+<a class="btn btn-secondary" href="index.html#/video" role="button">See More</a>
   </div>
-    <div class="col"><img src="images/b_c.jpg" width="200px"></div>
-    <div class="col"><img src="images/b_h.jpg" width="200px"></div>
-    <div class="col"><img src="images/b_f.jpg" width="200px"></div>
+    <div class="col"><img class="shadow p-3 mb-5 bg-white rounded" src="images/b_c.jpg" width="200px"></div>
+    <div class="col"><img class="shadow p-3 mb-5 bg-white rounded" src="images/b_h.jpg" width="200px"></div>
+    <div class="col"><img class="shadow p-3 mb-5 bg-white rounded" src="images/b_f.jpg" width="200px"></div>
   </div></div>
 
    
@@ -132,7 +142,8 @@ love Ontario. Cruising</p>
 
 
 
-    let blogcomponent = {template:`<div>
+    let destinationscomponent = {template:`<div>
+        <!--
            <ul>
           <li v-for="(item,index) in price">{{index+1}}.{{item.title}}
               <ul>
@@ -141,80 +152,76 @@ love Ontario. Cruising</p>
               </ul>
             </li>
             
-        </ul>
+        </ul>-->
 
-<div class="container">
-  <div class="row justify-content-md-center">
-      <div class="col-md-auto">
 
-       <h2> Beautiful Destinations</h2><br><br>
-    </div>
-
-  </div></div>
+<br><br><h3 class="sTitle">Find out most</h3>
+       <h2 class="bTitle"> Beautiful Destinations</h2><br><br>
+  
 
 <div class="container" >
   <div class="row">
      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
+        <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
         <img src="images/cn.jpg" class="card-img-top" alt="...">
        <div class="card-body">
         <h5 class="card-title">CN Tower</h5>
        <p class="card-text">Iconic tower with a revolving restaurant.</p>
-       <a href="#" class="btn btn-primary">Tornonto,ON</a>
+       <a href="#" class="btn btn-outline-info">Tornonto,ON</a>
       </div>
        </div>
 </div>
 
 <div class="col-sm">
-         <div class="card" style="width: 18rem;">
+         <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
         <img src="images/hill.jpg" class="card-img-top" alt="...">
        <div class="card-body">
         <h5 class="card-title">Parliament Hill</h5>
        <p class="card-text">Neo-Gothic home of Canada's legislature.</p>
-       <a href="#" class="btn btn-primary">Ottawo,ON</a>
+       <a href="#" class="btn btn-outline-info">Ottawo,ON</a>
       </div>
        </div>
 </div>
 
-         <div class="card" style="width: 18rem;">
+         <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
         <img src="images/park.jpg" class="card-img-top" alt="...">
        <div class="card-body">
         <h5 class="card-title">Algonquin Provincial Park</h5>
        <p class="card-text">Wilderness area with lakes & campsites.</p>
-       <a href="#" class="btn btn-primary">Algonquin,ON</a>
+       <a href="#" class="btn btn-outline-info">Algonquin,ON</a>
       </div>
        </div>
 
 
 <div class="col-sm">
-         <div class="card" style="width: 18rem;">
+         <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
         <img src="images/fall.jpg" class="card-img-top" alt="...">
        <div class="card-body">
         <h5 class="card-title">Horseshoe Falls</h5>
        <p class="card-text">Iconic, monumental waterfall.</p>
-       <a href="#" class="btn btn-primary">Niagara,ON</a>
+       <a href="#" class="btn btn-outline-info">Niagara,ON</a>
       </div>
        </div>
 </div>
 
 <div class="col-sm">
-         <div class="card" style="width: 18rem;">
+         <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
         <img src="images/mesum.jpg" class="card-img-top" alt="...">
        <div class="card-body">
         <h5 class="card-title">Royal Ontario Museum</h5>
        <p class="card-text">Huge range of culture & nature exhibits.</p>
-       <a href="#" class="btn btn-primary">Toronto, ON</a>
+       <a href="#" class="btn btn-outline-info">Toronto, ON</a>
       </div>
        </div>
 </div>
 
 <div class="col-sm">
-         <div class="card" style="width: 18rem;">
+         <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
         <img src="images/kingston.jpg" class="card-img-top" alt="...">
        <div class="card-body">
         <h5 class="card-title">Kingston</h5>
        <p class="card-text">Kingston is a Canadian city on Lake Ontario, at the mouth of the Cataraqui and St. Lawrence rivers.</p>
-       <a href="#" class="btn btn-primary">Kingston,ON</a>
+       <a href="#" class="btn btn-outline-info">Kingston,ON</a>
       </div>
        </div>
 </div>
@@ -240,7 +247,7 @@ love Ontario. Cruising</p>
        {path:"/video", component:videocomponent},
        {path:'/signup', component:signupcomponent},
        {path:'/home', component:homecomponent},
-       {path:'/blog', component:blogcomponent},
+       {path:'/destinations', component:destinationscomponent},
        
 
 

@@ -15,24 +15,24 @@
 <div id="app" class="container-fluid">
 <!-- router-view 是一个全局组件 可以直接使用 -->
 
-<div class="row">
-	
-<div class="col-sm-12">
-    <img src="images/logosvg.svg" width="150px">
- </div>
-	
-	 
-</div>
 
 
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="index.html#/home">
+    <img src="images/logosvg.svg" width="100"  class="d-inline-block align-top" alt="logo">
+   <!--  Ontario Tourism -->
+  </a>
 
-<div id="routerNav">
+  <div id="routerNav">
 <router-link to='/home'  tag='button' class="btn btn-light">Home</router-link>
 <router-link to='/signup' tag='button' class="btn btn-light">Sign Up</router-link>
 <router-link to='/video' tag='button' class="btn btn-light">Video</router-link>
-<router-link to='/blog' tag='button' class="btn btn-light">Blog</router-link>
+<router-link to='/destinations' tag='button' class="btn btn-light">Destinations</router-link>
 	
 </div>
+</nav>
+
+
 
 
 <transition name="fade" mode="out-in">
@@ -42,18 +42,31 @@
 
 	
 	<div id="footerArea">
-		
-		<ul id="socialIcon" class="float-right">
+
+		<div class="container" id="footerInfo">
+        <div class="row">
+
+  	 <div class="col">
+     
+		<p class="copy">
+        &copy; 2019 The Ontario Tourism Company, Inc
+        </p>
+    </div>
+
+    <div class="col">
+          <ul id="socialIcon" class="float-right">
 			Follow us on social media.
 			<li><img src="images/twitter-circular-button.svg"></li>
 			<li><img src="images/facebook-circular-logo.svg"></li>
 		    <li><img src="images/google-plus-circular-button.svg"></li>
-			<li><img src="images/twitter-circular-button.svg"></li>
+			</ul>
+    </div>
+
+       </div></div>
+
 		
-		</ul>
-		<p class="copy">
-        &copy; 2019 The Ontario Tourism Company, Inc
-        </p>
+		
+		
 	</div>	
 	
 </div>
